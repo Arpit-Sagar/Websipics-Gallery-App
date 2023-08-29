@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+
+	background: rgb(41, 9, 9);
+	height:100vh;
+	
+}
+.neon h1 {
+	animation: neon 1s ease infinite;
+}
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+        color: #f5efcb;
+    }
+    50% {
+        text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+        color: #eda0d3;
+    }
+}
+.wrapper {
+	font-family:'Times New Roman', serif;
+	color: white;
+	text-align: center;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+	font-size: 1.0rem;
+}
+span{
+	animation: spin_words 6s infinite;
+}
+@keyframes spin_words{
+	10%{
+		transform: translateY(-112%);
+	}
+	25%{
+		transform: translateY(-100%);
+	}
+	35%{
+		transform: translateY(-212%);
+	}
+	50%{
+		transform: translateY(-200%);
+	}
+	60%{
+		transform: translateY(-312%);
+	}
+}
+input:focus {
+	outline: none;
+}
+h3 {
+	font-family:"Lucida handwriting",cursive;
+	color:beige;
+	text-align: center;
+	margin-top: 1.5rem;
+	margin-bottom: 0.75rem;
+	font-size: 2.0rem;
+}
+.words {
+	color:beige;
+	font-size: 1.75rem;
+	position : relative;
+}
+.words span {
+	position: relative;
+	display: inline-block;
+	/* font-size: 40px;  */
+	/* color: #fff; */
+	/* text-transform: uppercase; */
+	animation: flip 2s infinite;
+	animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+	0%,80% {
+	  transform: rotateY(360deg) 
+	}
+  }
+h1 {
+	font-family: 'Lato', sans-serif;
+	color: white;
+	text-align: center;
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+	font-size: 5rem;
+}
+
+.parent {
+	width: 90%;
+	margin: 0 auto;
+}
+
+form {
+	width: 80%;
+	margin: 2rem auto;
+	display: grid;
+	justify-items: center;
+}
+
+#input {
+	width: 100%;
+	padding: 0.8rem 1rem;
+	margin-top: 0.75rem;
+	margin-bottom: 2rem;
+	max-width: 40rem;
+	font-size: 1rem;
+	border:0ex;
+}
+
+#submit {
+	background-color:#ff6100;
+	border: none;
+	padding: 0.8rem 2.5rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: bold;
+	color: white;
+}
+
+img {
+	width: 100%;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+
+img:hover {
+	transform: scale(1.1);
+	position: relative;
+	z-index: 10000;
+}
